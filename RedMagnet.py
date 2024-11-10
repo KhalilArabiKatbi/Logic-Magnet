@@ -1,6 +1,8 @@
+from GameLogic import *
 from Magnet import Magnet
 from wall import Wall
-from GameLogic import *
+
+
 class RedMagnet(Magnet):
     name = "red"
     def __init__(self,currentPosition):

@@ -1,7 +1,9 @@
-from Magnet import Magnet 
 from GameLogic import *
+from Magnet import Magnet
 from wall import Wall
 from Win import Win
+
+
 class PurpleMagnet(Magnet):
     name = "purple"
     def __init__(self, currentPosition):
@@ -31,9 +33,10 @@ class PurpleMagnet(Magnet):
           new_rows = rows + xOffset
           new_colms = colms + yOffset
           print(new_rows,new_colms)
-          if is_within_bounds(new_rows, new_colms, grid):
+          if self.is_within_bounds(new_rows, new_colms, grid):
             magnet = grid[new_rows,new_colms]   
             if isinstance(magnet, Magnet):
                 print(magnet,direction)
                 magnet.Push(direction, grid)
                 return
+            

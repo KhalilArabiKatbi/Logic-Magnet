@@ -1,8 +1,9 @@
+from GameLogic import *
 from Magnet import Magnet
 from PurpleMagnet import PurpleMagnet
 from RedMagnet import RedMagnet
 from Win import Win
-from GameLogic import *
+
 
 class Level:
     levelNumber = 0

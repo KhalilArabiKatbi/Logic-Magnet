@@ -1,9 +1,9 @@
+
+import numpy as np
+from GameLogic import parseInput, checkIndices, check_Win_Positions
 from Level import Level
 from PurpleMagnet import PurpleMagnet
 from RedMagnet import RedMagnet
-from GameLogic import *
-from Win import Win
-import numpy as np
 
 level_number = int(input("Insert level number: "))
 gameGrid, tries = Level.LoadLevel(level_number)
@@ -52,3 +52,4 @@ if winPositions.size == 0:
     print("You won!")
 else:
     print("No more tries left. Game over!")
+    
